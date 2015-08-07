@@ -553,6 +553,7 @@
         \xdef\Hy@chapapp{CHAPTER}%
         \gdef\theHchapter{\thechapter}%
         \refstepcounter{chapter}%
+        \addtocontents{toc}{\protect\addvspace{10\p@}}%
         \addcontentsline{toc}{chapter}{\@chapapp\thechapter~\@chapappextra#1}%
         \addtocontents{lof}{\protect\addvspace{10\p@}}%
         \addtocontents{lot}{\protect\addvspace{10\p@}}%
@@ -576,6 +577,7 @@
         \if@aftertoc%
             \hyperdef{SCHAPTER}{\theschapter}{}%
             \@makeschapterhead{#1}\@afterheading%
+            \addtocontents{toc}{\protect\addvspace{10\p@}}%
             \addcontentsline{toc}{chapter}{\@chapapp\xspace{}\@chapappextra#1}%
         \else%
             \pdfbookmark[0]{#1}{MUTESCHAPTER.\theschapter}%

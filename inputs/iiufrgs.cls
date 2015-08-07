@@ -139,10 +139,6 @@
 
 \vfuzz=30pt % prevent overfull \vbox while \output is active
 
-% prevent underfull \vbox while \output is active:
-\edef\orig@output{\the\output}
-\output{\setbox\@cclv\vbox{\unvbox\@cclv\vspace{0pt plus 50pt}}\orig@output}
-
 %==============================================================================
 % Margens do texto
 %==============================================================================
